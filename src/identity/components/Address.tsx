@@ -12,7 +12,7 @@ export function Address({ address = null, className }: AddressReact) {
   }
 
   return (
-    <span data-testid="ockAddress" className={cn(text.label2, className)}>
+    <span id="curAddress" data-testid="ockAddress" className={cn(text.label2, className)}>
       {contextAddress ?? address}
     </span>
   );
